@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUFS Audio Normalizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-white to-blue-100 min-h-screen flex items-center justify-center font-sans">
+
+  <div class="bg-white shadow-2xl rounded-2xl p-8 max-w-md w-full border border-blue-300">
+    <h1 class="text-2xl font-bold text-blue-700 mb-6 text-center">🎧 LUFS Audio Normalizer</h1>
+
+    <form method="POST" action="/upload" enctype="multipart/form-data" class="flex flex-col space-y-4">
+      <label class="block">
+        <span class="text-gray-700 font-medium">Choose audio file</span>
+        <input type="file" name="file" accept=".mp3,.wav,.flac"
+               class="mt-2 block w-full text-sm text-gray-800 file:mr-4 file:py-2 file:px-4
+                      file:rounded-lg file:border-0 file:text-sm file:font-semibold
+                      file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition"/>
+      </label>
+
+      <button type="submit"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+        🔄 Upload & Normalize
+      </button>
+    </form>
+
+    <p class="text-xs text-gray-500 text-center mt-6">
+      Supports: MP3, WAV, FLAC — Max 100MB
+    </p>
+  </div>
+
+</body>
+</html>
