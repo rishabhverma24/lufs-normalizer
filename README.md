@@ -40,9 +40,6 @@ lufs_normalizer/
 ├── requirements.txt
 └── README.md
 
-
----
-
 ## 💻 How to Run Locally
 
 ### ✅ Step 1: Clone the Repository
@@ -110,6 +107,3 @@ This project is for educational/demo purposes only and does not include real-tim
 
 🙋‍♂️ Author
 Rishabh Verma
-
-
-
